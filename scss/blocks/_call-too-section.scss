@@ -170,7 +170,7 @@
     }
     .list__arrow {
         position: absolute;
-        left: calc(55% - -10px);
+        left: calc(55% - 30px);
         top: calc(15% - 50px);
     }
     .bloc__right-span {
@@ -294,6 +294,8 @@
         display: none;
     }
 }
+
+// responsive mobile
 @include breakpoint-down (360px) {
     .call__too__section {
         padding-top: 83px;
@@ -328,7 +330,7 @@
     }
     .bloc__right-arrow {
         position: absolute;
-        left: calc(10% - -30px);
+        left: calc(10% - 30px);
         top: calc(30% - 100px);
     }
     .bloc__arrow {
@@ -338,7 +340,7 @@
      }
     .list__arrow {
         position: absolute;
-        left: calc(60% - -0px);
+        left: calc(60% - 30px);
         top: calc(15% - 60px);
     }
 }

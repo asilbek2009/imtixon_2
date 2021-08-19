@@ -22,6 +22,7 @@
   color: $color-text-white;
   background-color: #FCB72B;
   border: none;
+  border: 3px solid transparent;
 }
 @mixin site-logo {
     display: block;

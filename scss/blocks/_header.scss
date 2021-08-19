@@ -17,8 +17,33 @@ header {
     width: 108px;
     height: 29px;
 }
+.site-logo path{
+    transition: all 0.3s ease;
+}
+.site-logo:hover {
+    transform: scale(1.1);
+}
+.site-logo:hover path {
+    
+    fill: #FCB72B;
+}
+.site-logo:active {
+    fill: #939CAA;
+    transform: scale(1);
+}
 .navigation__nav {
     margin-left: 58px;
+}
+.navigation__nav-link {
+    transition: all 0.3s ease-in-out;
+}
+.navigation__nav-link:hover {
+    color: #FCB72B;
+    transform: scale(1.1)
+}
+.navigation__nav-link:active {
+    color: #939CAA;
+    transform: scale(1)
 }
 .navigation__nav-pages {
     @include reset-list;
@@ -45,6 +70,17 @@ header {
     background-color: transparent;
     border: none;
     display: none;
+}
+.site-button {
+    transition: all 0.3s ease;
+}
+.site-button:hover {
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+    background-color: transparent;
+}
+.site-button:active {
+    transform: scale(0.99);
 }
 .navigation__button-mobile img {
     width: 30px;

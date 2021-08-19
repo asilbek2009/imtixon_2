@@ -439,6 +439,7 @@ img {
   color: #FFFFFF;
   background-color: #FCB72B;
   border: none;
+  border: 3px solid transparent;
   cursor: pointer;
 }
 
@@ -465,8 +466,39 @@ header {
   height: 29px;
 }
 
+.site-logo path {
+  transition: all 0.3s ease;
+}
+
+.site-logo:hover {
+  transform: scale(1.1);
+}
+
+.site-logo:hover path {
+  fill: #FCB72B;
+}
+
+.site-logo:active {
+  fill: #939CAA;
+  transform: scale(1);
+}
+
 .navigation__nav {
   margin-left: 58px;
+}
+
+.navigation__nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+.navigation__nav-link:hover {
+  color: #FCB72B;
+  transform: scale(1.1);
+}
+
+.navigation__nav-link:active {
+  color: #939CAA;
+  transform: scale(1);
 }
 
 .navigation__nav-pages {
@@ -501,6 +533,20 @@ header {
   background-color: transparent;
   border: none;
   display: none;
+}
+
+.site-button {
+  transition: all 0.3s ease;
+}
+
+.site-button:hover {
+  border: 3px solid #FCB72B;
+  color: #FCB72B;
+  background-color: transparent;
+}
+
+.site-button:active {
+  transform: scale(0.99);
 }
 
 .navigation__button-mobile img {
@@ -841,7 +887,7 @@ header {
 
   .list__arrow {
     position: absolute;
-    left: calc(55% - -10px);
+    left: calc(55% - 30px);
     top: calc(15% - 50px);
   }
 
@@ -1016,7 +1062,7 @@ header {
 
   .bloc__right-arrow {
     position: absolute;
-    left: calc(10% - -30px);
+    left: calc(10% - 30px);
     top: calc(30% - 100px);
   }
 
@@ -1028,7 +1074,7 @@ header {
 
   .list__arrow {
     position: absolute;
-    left: calc(60% - -0px);
+    left: calc(60% - 30px);
     top: calc(15% - 60px);
   }
 }
@@ -1374,11 +1420,32 @@ header {
   margin-left: 336px;
 }
 
+.sign__bloc-right a:hover .sign__bloc-img {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 5px -2px rgba(30, 129, 204, 0.2);
+}
+
+.sign__bloc-right a:hover .sign__bloc-jpg {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 5px -2px rgba(30, 129, 204, 0.2);
+}
+
+.sign__bloc-right a:active .sign__bloc-jpg {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.sign__bloc-right a:active .sign__bloc-img {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
 .sign__bloc-img {
   display: block;
   width: 159px;
   height: 56px;
   margin-right: 18px;
+  transition: all 0.3s ease-in-out;
 }
 
 .sign__bloc-jpg {
@@ -1386,6 +1453,7 @@ header {
   width: 182px;
   height: 56px;
   margin-left: auto;
+  transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1475,6 +1543,10 @@ header {
     width: 256px;
     margin-left: 0px;
   }
+
+  .sign__bloc-img {
+    margin-left: -10px;
+  }
 }
 .footer__wrapper {
   background-color: #333A44;
@@ -1512,6 +1584,17 @@ header {
   display: inline-block;
   text-decoration: none;
   color: #495567;
+  transition: all 0.3s ease;
+}
+
+.footer__nav-link:hover {
+  transform: scale(1.1);
+  color: #FCB72B;
+}
+
+.footer__nav-link:active {
+  transform: scale(1);
+  color: #495567;
 }
 
 .footer__location {
@@ -1520,6 +1603,18 @@ header {
 
 .footer__location img {
   margin-left: 24px;
+}
+
+.footer__location a .footer__location-img {
+  transition: all 0.3s ease;
+}
+
+.footer__location a:hover .footer__location-img {
+  transform: scale(1.1);
+}
+
+.footer__location a:active .footer__location-img {
+  transform: scale(1);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1565,7 +1660,7 @@ header {
     margin-left: auto;
   }
 
-  .footer__location img {
+  .footer__location-img {
     margin-left: 24px;
   }
 }
