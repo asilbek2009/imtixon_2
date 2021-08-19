@@ -1,0 +1,19 @@
+.sign__section {
+  background-color: #495567;
+  padding-top: 102px;
+  padding-bottom: 102px;
+}
+
+.sign__bloc {
+  display: flex;
+  align-items: center;
+}
+
+.sign__bloc-h2 {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+}

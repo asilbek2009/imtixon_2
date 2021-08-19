@@ -1,0 +1,124 @@
+.section {
+    background-color: #495567;
+    background-image: url(/images/kircle.png);
+    background-repeat: no-repeat;
+    background-position: calc(50% - -250px)150px;
+    margin-top: 280px;
+}
+.sign__section {
+    padding-top: 102px;
+    padding-bottom: 102px;
+}
+.sign__bloc {
+    display: flex;
+    align-items: center;
+}
+.sign__bloc-title {
+    width: 415px;
+}
+.sign__bloc-h2 {
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px; 
+    color: $color-text-white; 
+    margin: 0;  
+}
+.sign__bloc-right {
+    display: flex;
+    width: 359px;
+    margin-left: 336px;
+}
+.sign__bloc-img{
+    display: block;
+    width: 159px;
+    height: 56px;
+    margin-right: 18px;
+}
+.sign__bloc-jpg {
+    display: block;
+    width: 182px;
+    height: 56px;
+    margin-left: auto;
+}
+@include breakpoint-down (1000px) {
+    .section {
+        background-color: #495567;
+        background-image: url(/images/kircle.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% - -0px)190px;
+        margin-top: 104px;
+    }
+    .sign__section {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+    .sign__bloc {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sign__bloc-title {
+        margin: 0 auto;
+        width: 415px;
+    }
+    .sign__bloc-h2 {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px; 
+        text-align: center;
+        color: $color-text-white; 
+        margin: 0;  
+    }
+    .sign__bloc-right {
+        margin-top: 40px;
+        display: flex;
+        width: 359px;
+        margin-left: 0px;
+    }
+   
+}
+@include breakpoint-down (600px) {
+    .section {
+        background-color: #495567;
+        background-image: url(/images/kircle.png);
+        background-repeat: no-repeat;
+        background-position: calc(50% - -0px)190px;
+        margin-top: 50px;
+    }
+    .sign__section {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    .sign__bloc {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sign__bloc-title {
+        margin: 0 auto;
+        width: 311px;
+    }
+    .sign__bloc-h2 {
+        font-family: Space Mono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -2.14286px; 
+        text-align: center;
+        color: $color-text-white; 
+        margin: 0;  
+    }
+    .sign__bloc-right {
+        margin-top: 40px;
+        display: flex;
+        width: 256px;
+        margin-left: 0px;
+    }   
+}

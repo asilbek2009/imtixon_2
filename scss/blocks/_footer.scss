@@ -1,0 +1,123 @@
+.footer__wrapper {
+    background-color: $footer-header-background;
+    padding-top: 36px;
+    padding-bottom: 32px;
+}
+.footer__inner {
+    display: flex;
+    align-items: center ;
+}
+.footer__logo {
+    width: 108px;
+    height: 29px;
+}
+.footer__nav {
+    margin-left: 58px;
+}
+.footer__nav-pages {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+}
+.footer__nav-list ~ .footer__nav-list {
+    margin-left: 32px;
+}
+.footer__nav-link {
+    @include reset-link;
+    color: $color-text-dark;
+}
+.footer__location {
+    margin-left: auto;
+}
+.footer__location img{
+    margin-left: 24px;
+}
+// responsive tablet
+@include breakpoint-down (1000px) {
+    .footer__wrapper {
+        background-color: $footer-header-background;
+        padding-top: 36px;
+        padding-bottom: 32px;
+    }
+    .footer__inner {
+        display: flex;
+        align-items: center ;
+    }
+    .footer__logo {
+        width: 108px;
+        height: 29px;
+    }
+    .footer__nav {
+        margin-left: 58px;
+    }
+    .footer__nav-pages {
+        @include reset-list;
+        display: flex;
+        align-items: center;
+    }
+    .footer__nav-list ~ .footer__nav-list {
+        margin-left: 32px;
+    }
+    .footer__nav-link {
+        @include reset-link;
+        color: $color-text-dark;
+    }
+    .footer__location {
+        margin-left: auto;
+    }
+    .footer__location img{
+        margin-left: 24px;
+    }
+}
+
+// responsive mobile
+@include breakpoint-down (600px) {
+    .footer__wrapper {
+        background-color: $footer-header-background;
+        padding-top: 36px;
+        padding-bottom: 32px;
+    }
+    .footer__inner {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__logo {
+        width: 108px;
+        height: 29px;
+        margin-bottom: 41px;
+    }
+    .footer__nav {
+        margin-left: 0px;
+        margin-bottom: 87px
+    }
+    .footer__nav-pages {
+        @include reset-list;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer__nav-list {
+        margin-bottom: 16px;
+    }
+    .footer__nav-list ~ .footer__nav-list {
+        margin-left: 0px;
+        
+    }
+    .footer__nav-link {
+        @include reset-link;
+        color: $color-text-dark;
+    }
+    .footer__location {
+        margin-left: 0;
+    }
+    .footer__location img {
+        margin-left: 0;
+        width: 20px;
+        height: 20px;
+    }
+    .footer__location-img ~ .footer__location-img{
+        margin-left: 0;
+        margin-left: 24px;
+    }
+}
