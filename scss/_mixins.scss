@@ -1,0 +1,41 @@
+/* Listlarni qayta sozlash */
+@mixin reset-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Linkni qayta sozlash */
+@mixin reset-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Button uchun umumiy stillar */
+@mixin site-button {
+  font-family: Space-Mono;
+  padding: 14px 39px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-text-white;
+  background-color: #FCB72B;
+  border: none;
+}
+@mixin site-logo {
+    display: block;
+    width: 108px; 
+    height: 29px;
+}
+@mixin breakpoint-down ($screen-width) {
+  @media only screen and (max-width: $screen-width){
+    @content;
+  }
+}
+
+@mixin breakpoint-between ($min-screen, $max-screen) {
+  @media only screen and (min-width: $min-screen) and (max-width: $max-screen) {
+    @content
+  }
+}

@@ -1,0 +1,8 @@
+.bloc__list {
+  display: flex;
+  align-items: center;
+}
+
+.bloc__left {
+  width: 445px;
+}
